@@ -1,1 +1,65 @@
 @import "tailwindcss";
+
+.markdown-body {
+  width: 100%;
+  max-width: 100%;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.75rem;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Custom scrollbar for tables */
+.markdown-body table::-webkit-scrollbar {
+  height: 4px;
+}
+
+.markdown-body table::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 2px;
+}
+
+.markdown-body table::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 2px;
+}
+
+.markdown-body table::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+
+.markdown-body th, .markdown-body td {
+  border: 1px solid #e5e7eb;
+  padding: 0.4rem;
+  text-align: left;
+  min-width: 85px;
+  white-space: normal;
+  word-break: break-word;
+}
+
+.markdown-body th {
+  background-color: #f9fafb;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.markdown-body p {
+  margin-bottom: 0.5rem;
+}
+
+.markdown-body ul, .markdown-body ol {
+  margin-left: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.markdown-body li {
+  margin-bottom: 0.25rem;
+}
